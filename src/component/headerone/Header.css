@@ -1,0 +1,58 @@
+/* 2. header */
+
+/* .second-header{
+    background: black;
+
+}
+
+
+
+
+.second-header {
+border: none;
+padding-bottom: 15px;
+padding-top: 15px;
+color: #fff;
+position: relative;
+z-index: 1;
+}
+.second-header::before {
+content: "";
+height: 100%;
+position: absolute;
+width: 32%;
+background: rgba(253,197,25,255);
+top: 0;
+z-index: -1;
+left: -25px;
+transform: skew(30deg);
+}
+
+.second-header a:hover{
+    color:#ffffffc2;
+}
+
+.second-header-btn .btn {
+background: rgba(253,197,25,255);
+font-size: 16px;
+color: #fff;
+padding: 25px 30px;
+border-radius: 0;
+}
+.second-header-btn .btn:hover {
+color: #fff;
+background: #125875;
+}
+
+
+
+.header-social a {
+color: #fff;
+margin-left: 15px;
+font-size: 18px;
+}
+
+.navbar {
+    display: flex;
+}   */
+
