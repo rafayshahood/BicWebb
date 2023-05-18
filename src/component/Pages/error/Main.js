@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../../headerone/Main'
-import Bredcom from '../../Bredcom/Main'
+import Header from '../../header/Main'
+import Bredcom from '../../Bredcom/Bredcom'
 import First from '../menerror/First'
 
 function Main() {

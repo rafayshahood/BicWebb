@@ -1,0 +1,38 @@
+import React from 'react'
+import icon from "../../assets/img/icon/send-mail.png"
+
+function Subscribe() {
+  return (
+    <>
+        <section className="newslater-area pt-60 pb-60" style={{ backgroundColor: "#274078" }} >
+            <div className="container">
+                <div className="row align-items-center">
+                <div className="col-xl-7 col-lg-7">
+                    <div className="section-title newslater-title">
+                    <div className="icon">
+                        <img src={icon} alt="img" />
+                    </div>
+                    <div className="text">
+                        <h3>Stay Updated with University News and Events</h3>
+                        <p>Subscribe to Our Newsletter for the Latest Announcements and Insights</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="col-xl-5 col-lg-5">
+                    <form name="ajax-form" id="contact-form4" action="#" method="post" className="contact-form newslater" >
+                    <div className="form-group p-relative">
+                        <input className="form-control" id="email2" name="email" type="email" placeholder="Email Address..." defaultValue="" required="" />
+                        <button type="submit" className="btn btn-custom" id="send2">
+                        Subscribe Now
+                        </button>
+                    </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </section>
+    </>
+  )
+}
+
+export default Subscribe

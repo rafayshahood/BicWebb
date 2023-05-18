@@ -1,8 +1,8 @@
 import React from 'react'
-import Bredcom from '../Bredcom/Main'
-import Header from '../headerone/Main'
+import Bredcom from '../Bredcom/Bredcom'
+import Header from '../header/Main'
 import First from '../mencoursedetails/First'
-import Brand from '../menhomethree/Brand'
+import MovingBanner from '../MovingBanner/MovingBanner'
 
 function Main() {
   return (
@@ -12,7 +12,7 @@ function Main() {
           title="Home" 
           subtitle="Course Details" />
         <First/>
-        <Brand/>
+        <MovingBanner/>
     </>
   )
 }

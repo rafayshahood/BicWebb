@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../headerone/Main'
-import Bredcom from '../Bredcom/Main'
-import Brand from '../menhomethree/Brand'
+import Header from '../header/Main'
+import Bredcom from '../Bredcom/Bredcom'
+import MovingBanner from '../MovingBanner/MovingBanner'
 import Touch from '../mencontact/Touch'
 import Map from '../mencontact/Map'
 import Form from '../mencontact/Form' 
@@ -16,7 +16,7 @@ function Main() {
         <Touch/>
         <Map/>
         <Form/>
-        <Brand/>
+        <MovingBanner/>
     </>
   )
 }

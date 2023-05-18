@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import img3 from "../../../assets/images/FacultyComponentImages/SirFawad.jpeg"
+
 
 function First() {
   return (
@@ -11,14 +13,14 @@ function First() {
                     <div className="col-lg-5 col-md-12 col-sm-12">
                     <div className="team-img-box">
                         <Link to="/team-single">
-                            <img src="assets/img/team/team01.jpg" alt="img" />
+                            <img src={img3} alt="img" />
                         </Link>
                     </div>
                     </div>
                     <div className="text-column col-lg-7 col-md-12 col-sm-12">
                     <div className="s-about-content pl-30 wow fadeInRight" data-animation="fadeInRight" data-delay=".2s" >
-                        <h2>Ronal Anderson</h2>
-                        <p>The world of search engine optimization is complex.</p>
+                        <h2>Fawad Naseer</h2>
+                        <p>Head of Computer Science</p>
                         <div className="per-info">
                         <div className="info-text">
                             <strong>Course: 2</strong>
@@ -63,7 +65,7 @@ function First() {
                             </div>
                             <div className="text-column col-xl-6 col-lg-12 col-md-12 text-right">
                             <div className="slider-btn">
-                                <Link to="/team" className="btn ss-btn smoth-scroll">
+                                <Link to="https://www.linkedin.com/in/fawadnaseer/?originalSubdomain=pk" className="btn ss-btn smoth-scroll">
                                 Read More <i className="fal fa-long-arrow-right" />
                                 </Link>
                             </div>

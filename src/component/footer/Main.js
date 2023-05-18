@@ -1,10 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import background from '../../assets/img/bg/footer-bg.png'
+import img1 from '../../assets/img/blog/s-blogimg-01.png'
+import img2 from '../../assets/img/blog/s-blogimg-02.png'
+import img3 from '../../assets/img/logo/f_logo.png'
+
 
 function Main() {
   return (
     <>
-        <footer className="footer-bg footer-p pt-90" style={{ backgroundColor: "#125875", backgroundImage: "url(assets/img/bg/footer-bg.png)" }} >
+        <footer className="footer-bg footer-p pt-90" style={{ backgroundColor: "#125875", backgroundImage: `url(${background})` }} >
             <div className="footer-top pb-70">
                 <div className="container">
                 <div className="row justify-content-between">
@@ -69,7 +74,7 @@ function Main() {
                             <li>
                             <div className="thum">
                                 {" "}
-                                <img src="assets/img/blog/s-blogimg-01.png" alt="img" />
+                                <img src={img1} alt="img" />
                             </div>
                             <div className="text">
                                 {" "}
@@ -82,7 +87,7 @@ function Main() {
                             <li>
                             <div className="thum">
                                 {" "}
-                                <img src="assets/img/blog/s-blogimg-02.png" alt="img" />
+                                <img src={img2} alt="img" />
                             </div>
                             <div className="text">
                                 {" "}
@@ -139,7 +144,7 @@ function Main() {
                     <div className="col-lg-4">
                     <div className="copy-text">
                         <Link to="/">
-                            <img src="assets/img/logo/f_logo.png" alt="img" />
+                            <img src={img3} alt="img" />
                         </Link>
                     </div>
                     </div>
