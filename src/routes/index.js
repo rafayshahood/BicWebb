@@ -48,7 +48,7 @@ function Index() {
 
         <Routes>
 
-           <Route path="/" element={<Home/>} />
+           <Route path="//BicWebb/" element={<Home/>} />
            <Route path="/scholarships" element={<ScholarshipScreen/>} />
            <Route path="/fee-structure" element={<FeeStructureScreen/>} />
            <Route path="/how-to-apply" element={<HowToApplyScreen/>} />

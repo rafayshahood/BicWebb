@@ -58,7 +58,7 @@ function Main() {
                             <nav id="mobile-menu">
                                 <ul>
                                 <li className="has-sub">
-                                    <Link to="/">Home</Link>
+                                    <Link to="/BicWebb/">Home</Link>
                                 </li>
                                 <li className="has-sub">
                                     <Link to="/courses">Admissions</Link>
