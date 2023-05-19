@@ -549,15 +549,48 @@ top: -3px;
 .main-menu ul li.active a {
 	color: rgba(253,197,25,255);
 }
-.main-menu ul li a {
-	display: block;
-	color: #141b22;
-	padding: 20px 0;
-    font-weight:600;
-	position: relative;
-    font-size: 16px;
-    font-family: 'Jost', sans-serif;
-}
+
+@media (max-width: 1209px) {
+    /* CSS rules for small screen size */
+    .main-menu ul li a {
+        display: block;
+        color: #141b22;
+        padding: 20px 0;
+        font-weight:600;
+        position: relative;
+        font-size: 13.5px;
+        font-family: 'Jost', sans-serif;
+    }
+  }
+  
+  /* Styles for medium screen size */
+  @media (min-width: 1210) and (max-width: 1400px) {
+    /* CSS rules for medium screen size */
+    .main-menu ul li a {
+        display: block;
+        color: #141b22;
+        padding: 20px 0;
+        font-weight:600;
+        position: relative;
+        font-size: 14.5px;
+        font-family: 'Jost', sans-serif;
+    }
+  }
+  
+  /* Styles for large screen size */
+  @media (min-width: 1401px) {
+    /* CSS rules for large screen size */
+    .main-menu ul li a {
+        display: block;
+        color: #141b22;
+        padding: 20px 0;
+        font-weight:600;
+        position: relative;
+        font-size: 16px;
+        font-family: 'Jost', sans-serif;
+    }
+  }
+
 .main-menu ul li a::after {
   content: "+";
   margin-left: 10px;

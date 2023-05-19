@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import img1 from "../../assets/images/ShepComponentImages/BicIslAudi.jpg"
 function Admission() {
   return (
     <>
@@ -9,7 +9,7 @@ function Admission() {
                 <div className="row justify-content-center align-items-center">
                 <div className="col-lg-6 col-md-12 col-sm-12">
                     <div className="s-about-img p-relative  wow fadeInLeft animated" data-animation="fadeInLeft" data-delay=".4s" >
-                        <img src="assets/img/features/about_img.png" alt="img" />
+                        <img src={img1} alt="img" />
                     </div>
                 </div>
                 <div className="col-lg-6 col-md-12 col-sm-12">

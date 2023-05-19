@@ -6,8 +6,12 @@ import bicLogo from "../../assets/img/logo/logo.png"
 
 
     const AllCampusSubMenu = (props) => {
+        const styles = {
+            display: props.mobile ? 'block' : 'inline',
+
+          };
         return(
-            <ul>
+            <ul style={styles}>
             <li>
             <Link to={`/${props.campusName}/FacultyandStaff`}>Faculty and Staff</Link>
             </li>
@@ -35,6 +39,13 @@ import bicLogo from "../../assets/img/logo/logo.png"
 
 
 function Main() {
+    const [mobile, setmobile] = useState(false);
+    const [Admissions, setAdmissions] = useState(false);
+    const [News, setNews] = useState(false);
+    const [Campuses, setCampuses] = useState(false);
+    const [CampusesSub, setCampusesSub] = useState(false);
+    const [Students, setStudents] = useState(false);
+    const [About, setAbout] = useState(false);
   return (
     <>
         <header className="header-area header-three">
@@ -61,7 +72,7 @@ function Main() {
                                     <Link to="/BicWebb/">Home</Link>
                                 </li>
                                 <li className="has-sub">
-                                    <Link to="/courses">Admissions</Link>
+                                    <Link>Admissions</Link>
                                     <ul>
                                         <li>
                                             <Link to="/Offered-Programs">Offered Programs</Link>
@@ -91,19 +102,19 @@ function Main() {
                                     <Link to="/epcad">EPCAD</Link>
                                 </li>
                                 <li className="has-sub">
-                                    <Link to="/courses">Campuses</Link>
+                                    <Link>Campuses</Link>
                                     <ul>
                                         <li className='has-sub'>
                                             <Link>Beaconhouse International College - Islamabad</Link>
-                                            <AllCampusSubMenu campusName="Islamabad"/>
+                                            <AllCampusSubMenu campusName="Islamabad" mobile="false"/>
                                         </li>
                                         <li className='has-sub'>
                                             <Link>Beaconhouse International College - Faisalabad</Link>
-                                            <AllCampusSubMenu campusName="Faisalabad"/>
+                                            <AllCampusSubMenu campusName="Faisalabad" mobile="false"/>
                                         </li>
                                          <li className='has-sub'>
                                             <Link>Beaconhouse International College - Lahore</Link>
-                                            <AllCampusSubMenu campusName="Lahore"/>
+                                            <AllCampusSubMenu campusName="Lahore" mobile="false"/>
                                         </li>
                                     </ul>
                                 </li>
@@ -164,6 +175,160 @@ function Main() {
                                 </li>
                             </ul>
                         </div>
+                        </div>
+                        <div className="col-12">
+                            <div className="mobile-menu mean-container">
+                                <div className="mean-bar">
+                                    <a href="#nav" onClick={() => setmobile(!mobile)} className={`meanmenu-reveal ${mobile && "meanclose"}`} style={{ right: 0, left: "auto", textAlign: "center", textIndent: 0, fontSize: 18 }} >
+                                        { mobile ? "X" : <span><span><span></span></span></span> }
+                                    </a>
+                                    {mobile && 
+                                        <nav className="mean-nav">
+                                                <ul style={{ display : "block" }}>
+                                                    <li>
+                                                        <Link to="/BicWebb/">Home</Link>
+                                                    </li>
+                                                    <li className="has-sub">
+                                                    <Link>Admissions</Link>
+                                                    {News && 
+                                                        <ul style={{ display: "block" }}>
+                                                            <li>
+                                                                <Link to="/Offered-Programs">Offered Programs</Link>
+                                                            </li>
+                                                            <li>
+                                                                <Link to="/eligibility-criteria">Eligibility Criteria</Link>
+                                                            </li>
+                                                            <li>
+                                                                <Link to="/how-to-apply">How to Apply</Link>
+                                                            </li>
+                                                            <li>
+                                                                {" "}
+                                                                <Link to="/fee-structure">Fee Structure</Link>
+                                                            </li>
+                                                            <li>
+                                                                {" "}
+                                                                <Link to="/scholarships">Scholaraships/Financial Aid</Link>
+                                                            </li>
+                                                            <li>
+                                                                {" "}
+                                                                <Link to="/prospectus">Prospectus</Link>
+                                                            </li>
+                                                        </ul>
+                                                    }
+
+                                                    <a className={`mean-expand ${mobile && "mean-clicked"}`}  onClick={() => { setAdmissions(!Admissions) }} href="#" style={{ fontSize: 18 }}>
+                                                        {Admissions ? "-" : "+"}
+                                                    </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <Link to="/epcad">EPCAD</Link>
+                                                    </li>
+                                                    <li className="has-sub">
+                                                    <a href="#">Campuses</a>
+                                                    {Campuses && 
+                                                        <ul style={{ display: "block" }}>
+                                                            <li className='has-sub'>
+                                                                <a href='#'>Beaconhouse International College - Islamabad</a>
+                                                                {CampusesSub && 
+                                                                    <ul>
+                                                                        <AllCampusSubMenu campusName="Islamabad" mobile="true" />
+                                                                    </ul>
+                                                                }
+
+                                                                <a className={`mean-expand ${mobile && "mean-clicked"}`}  onClick={() => { setCampusesSub(!CampusesSub) }} href="#" style={{ fontSize: 18 }}>
+                                                                    {CampusesSub ? "-" : "+"}
+                                                                </a>
+                                                                
+                                                            </li>
+                                                            <li className='has-sub'>
+                                                                <a href='#'>Beaconhouse International College - Faisalabad</a>
+                                                                {CampusesSub && 
+                                                                    <ul>
+                                                                        <AllCampusSubMenu campusName="Faisalabad" mobile="true" />
+                                                                    </ul>
+                                                                }
+
+                                                                <a className={`mean-expand ${mobile && "mean-clicked"}`}  onClick={() => { setCampusesSub(!CampusesSub) }} href="#" style={{ fontSize: 18 }}>
+                                                                    {CampusesSub ? "-" : "+"}
+                                                                </a>                                                            </li>
+                                                            <li className='has-sub'>
+                                                                <a href='#'>Beaconhouse International College - Lahore</a>
+                                                                {CampusesSub && 
+                                                                    <ul>
+                                                                        <AllCampusSubMenu campusName="Lahore" mobile="true" />
+                                                                    </ul>
+                                                                }
+
+                                                                <a className={`mean-expand ${mobile && "mean-clicked"}`}  onClick={() => { setCampusesSub(!CampusesSub) }} href="#" style={{ fontSize: 18 }}>
+                                                                    {CampusesSub ? "-" : "+"}
+                                                                </a>                                                            </li>
+                                                        </ul>
+                                                    }
+                                                    <a className={`mean-expand ${mobile && "mean-clicked"}`}  onClick={() => { setCampuses(!Campuses) }} href="#" style={{ fontSize: 18 }}>
+                                                        {Campuses ? "-" : "+"}
+                                                    </a>              
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/careers">Careers</Link>
+                                                    </li> 
+                                                    <li className="has-sub">
+                                                    <Link>Students</Link>
+                                                    {Students && 
+                                                    <ul style={{ display: "block" }}>
+                                                        <li>
+                                                            <Link to="/code-of-conduct">Code of Conduct</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link to="/academic-calendar">Academic Calendar</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link to="/financial-rules">Financial Rules</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link to="/rules-and-regulations">Rules and Regulations</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link to="/societies">Societies</Link>
+                                                        </li>
+                                                    </ul>
+                                                    }
+                                                    <a className={`mean-expand ${mobile && "mean-clicked"}`}  onClick={() => { setStudents(!Students) }} href="#" style={{ fontSize: 18 }}>
+                                                        {Students ? "-" : "+"}
+                                                    </a>
+                                                    </li>
+
+                                                    <li className="has-sub">
+                                                    <Link>About Us</Link>
+                                                    {About && 
+                                                    <ul style={{ display: "block" }}>
+                                                        <li>
+                                                            <Link to="/about">History</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link to="/about">Ceo's Message</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link to="/about">CGMU's Meesage</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link to="/about">Book a tour</Link>
+                                                        </li>
+                                                    </ul>
+                                                    }
+                                                    <a className={`mean-expand ${mobile && "mean-clicked"}`}  onClick={() => { setAbout(!About) }} href="#" style={{ fontSize: 18 }}>
+                                                        {About ? "-" : "+"}
+                                                    </a>
+                                                    </li>
+
+                                                    <li className="mean-last">
+                                                        <Link to="/contact">Contact</Link>
+                                                    </li>
+                                                </ul>
+                                        </nav>
+                                    }
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
