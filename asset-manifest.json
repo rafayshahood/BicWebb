@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/BicWebb/static/css/main.7d21ffd1.css",
+    "main.css": "/BicWebb/static/css/main.3c160bb7.css",
     "main.js": "/BicWebb/static/js/main.56320e09.js",
     "static/js/787.28cb0dcd.chunk.js": "/BicWebb/static/js/787.28cb0dcd.chunk.js",
     "static/media/Cinema.jpg": "/BicWebb/static/media/Cinema.39e467ee3e50bc793613.jpg",
@@ -61,12 +61,12 @@
     "static/media/couress-img-5.jpg": "/BicWebb/static/media/couress-img-5.0e50f2e795dde1a41f26.jpg",
     "static/media/couress-img-6.jpg": "/BicWebb/static/media/couress-img-6.f37c368b6d900b3dae13.jpg",
     "index.html": "/BicWebb/index.html",
-    "main.7d21ffd1.css.map": "/BicWebb/static/css/main.7d21ffd1.css.map",
+    "main.3c160bb7.css.map": "/BicWebb/static/css/main.3c160bb7.css.map",
     "main.56320e09.js.map": "/BicWebb/static/js/main.56320e09.js.map",
     "787.28cb0dcd.chunk.js.map": "/BicWebb/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d21ffd1.css",
+    "static/css/main.3c160bb7.css",
     "static/js/main.56320e09.js"
   ]
 }
