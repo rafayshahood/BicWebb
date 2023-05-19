@@ -41,7 +41,6 @@ import bicLogo from "../../assets/img/logo/logo.png"
 function Main() {
     const [mobile, setmobile] = useState(false);
     const [Admissions, setAdmissions] = useState(false);
-    const [News, setNews] = useState(false);
     const [Campuses, setCampuses] = useState(false);
     const [CampusesSub, setCampusesSub] = useState(false);
     const [Students, setStudents] = useState(false);
@@ -190,7 +189,7 @@ function Main() {
                                                     </li>
                                                     <li className="has-sub">
                                                     <Link>Admissions</Link>
-                                                    {News && 
+                                                    {Admissions && 
                                                         <ul style={{ display: "block" }}>
                                                             <li>
                                                                 <Link to="/Offered-Programs">Offered Programs</Link>
