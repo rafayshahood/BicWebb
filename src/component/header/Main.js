@@ -70,6 +70,23 @@ function Main() {
                                 <li className="has-sub">
                                     <Link to="/BicWebb/">Home</Link>
                                 </li>
+                                <li className='has-sub'>
+                                    <Link to="/about">About Us</Link>
+                                    <ul>
+                                        <li>
+                                            <Link to="/history">History</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/ceo-message">Ceo's Message</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/cgmu-message">CGMU's Meesage</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/book-a-tour">Book a tour</Link>
+                                        </li>
+                                    </ul>
+                                </li>
                                 <li className="has-sub">
                                     <Link>Admissions</Link>
                                     <ul>
@@ -104,21 +121,18 @@ function Main() {
                                     <Link>Campuses</Link>
                                     <ul>
                                         <li className='has-sub'>
-                                            <Link>Beaconhouse International College - Islamabad</Link>
+                                            <Link>Islamabad Campus</Link>
                                             <AllCampusSubMenu campusName="Islamabad" mobile="false"/>
                                         </li>
                                         <li className='has-sub'>
-                                            <Link>Beaconhouse International College - Faisalabad</Link>
+                                            <Link>Faisalabad Campus</Link>
                                             <AllCampusSubMenu campusName="Faisalabad" mobile="false"/>
                                         </li>
                                          <li className='has-sub'>
-                                            <Link>Beaconhouse International College - Lahore</Link>
+                                            <Link>Lahore Campus</Link>
                                             <AllCampusSubMenu campusName="Lahore" mobile="false"/>
                                         </li>
                                     </ul>
-                                </li>
-                                <li>
-                                    <Link to="/careers">Careers</Link>
                                 </li>
                                 <li className="has-sub">
                                     <Link to="#">Students</Link>
@@ -140,25 +154,11 @@ function Main() {
                                     </li>
                                     </ul>
                                 </li>
-                                <li className='has-sub'>
-                                    <Link to="/about">About Us</Link>
-                                    <ul>
-                                        <li>
-                                            <Link to="/about">History</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/about">Ceo's Message</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/about">CGMU's Meesage</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/about">Book a tour</Link>
-                                        </li>
-                                    </ul>
+                                <li>
+                                    <Link to="/careers">Careers</Link>
                                 </li>
                                 <li>
-                                    <Link to="/contact">Contact</Link>
+                                    <Link to="/contact">Contact Us</Link>
                                 </li>
                                 </ul>
                             </nav>
@@ -302,16 +302,16 @@ function Main() {
                                                     {About && 
                                                     <ul style={{ display: "block" }}>
                                                         <li>
-                                                            <Link to="/about">History</Link>
+                                                            <Link to="/history">History</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="/about">Ceo's Message</Link>
+                                                            <Link to="/ceo-message">Ceo's Message</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="/about">CGMU's Meesage</Link>
+                                                            <Link to="/cgmu-message">CGMU's Meesage</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="/about">Book a tour</Link>
+                                                            <Link to="/book-a-tour">Book a tour</Link>
                                                         </li>
                                                     </ul>
                                                     }

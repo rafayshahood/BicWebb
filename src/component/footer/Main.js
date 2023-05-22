@@ -20,9 +20,7 @@ function Main() {
                         </div>
                         <div className="f-contact">
                         <p>
-                            Suspendisse non sem ante. Cras pretium gravida leo a convallis.
-                            Nam malesuada interdum metus, sit amet dictum ante congue eu.
-                            Maecenas ut maximus enim.
+                        Beaconhouse is one of the most trusted names in the sphere of education. With 45 years of excellence in the field, it's the first education system of its kind that helped revolutionize learning in Pakistan by bringing excellence to primary and intermediate levels of schooling. Now Beaconhouse has expanded its horizons into graduate and postgraduate levels, in the form of Beaconhouse International College.
                         </p>
                         </div>
                         <div className="footer-social mt-10">
@@ -150,7 +148,7 @@ function Main() {
                     </div>
                     <div className="col-lg-4 text-center"></div>
                     <div className="col-lg-4 text-right text-xl-right">
-                        Copyright © Qeducato 2023 . All rights reserved.
+                        Developed by Rafay Shahood . All rights reserved.
                     </div>
                 </div>
                 </div>

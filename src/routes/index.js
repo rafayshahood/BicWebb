@@ -31,6 +31,10 @@ import RulesAndRegulationsScreen from '../component/StudentsSubMenu/RulesAndRegu
 import FinancialRulesScreen from '../component/StudentsSubMenu/FinancialRulesScreen';
 import AcademicCalendarScreen from '../component/StudentsSubMenu/AcademicCalendarScreen';
 import CodeOfConductScreen from '../component/StudentsSubMenu/CodeOfConductScreen';
+import CeoMessageScreen from '../component/AboutScreen/CeoMessageScreen';
+import CgmuMessageScreen from '../component/AboutScreen/CgmuMessageScreen';
+import BookTourScreen from '../component/AboutScreen/BookTourScreen';
+import BicHistoryScreen from '../component/AboutScreen/BicHistoryScreen';
 
 function Index() {
 
@@ -79,6 +83,11 @@ function Index() {
 
 
            <Route path="/about" element={<About/>} />
+           <Route path="/book-a-tour" element={<BookTourScreen/>} />
+           <Route path="/cgmu-message" element={<CgmuMessageScreen/>} />
+           <Route path="/ceo-message" element={<CeoMessageScreen/>} />
+           <Route path="/history" element={<BicHistoryScreen/>} />
+
            <Route path="/single-courses" element={<Coursesdeatils/>} /> 
            <Route path="/single-courses-2" element={<Coursesdeatilstwo/>} /> 
            <Route path="/single-projects" element={<Projectdeatils/>} /> 

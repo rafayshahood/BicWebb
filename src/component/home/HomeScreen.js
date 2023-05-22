@@ -26,9 +26,7 @@ function HomeScreen() {
         <Scholarship/>
         <Video/>
         <Testimonial/>
-        <Subscribe/>
-        <MovingBanner/>
-        
+        <Subscribe/>        
     </>
   )
 }

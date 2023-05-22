@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 
 import img1 from "../../assets/img/bg/an-img-03.png"
-import img2 from "../../assets/img/bg/couress-img-1.jpg"
-import img3 from "../../assets/img/icon/cou-icon.png"
-import img4 from "../../assets/img/bg/couress-img-2.jpg"
-import img5 from "../../assets/img/icon/cou-icon.png"
-import img6 from "../../assets/img/bg/couress-img-3.jpg"
-import img7 from "../../assets/img/icon/cou-icon.png"
-import img8 from "../../assets/img/bg/couress-img-4.jpg"
-import img9 from "../../assets/img/icon/cou-icon.png"
+import img2 from "../../assets/images/CoursesImages/bba2.jpeg"
+import img3 from "../../assets/images/CoursesImages/business2.jpg"
+import iconimg from "../../assets/img/icon/cou-icon.png"
+import img4 from "../../assets/images/CoursesImages/hnc.jpg"
+import img5 from "../../assets/images/CoursesImages/computer-science.jpeg"
+import img6 from "../../assets/images/CoursesImages/software-engineering.jpeg"
+import img7 from "../../assets/images/CoursesImages/ir.jpeg"
+import img8 from "../../assets/images/CoursesImages/psychology.jpg"
+import img9 from "../../assets/images/CoursesImages/sociology.jpg"
 import img10 from "../../assets/img/bg/couress-img-5.jpg"
 import img11 from "../../assets/img/icon/cou-icon.png"
 import img12 from "../../assets/img/bg/couress-img-6.jpg"
@@ -76,57 +77,52 @@ function Courses() {
       const degree = [
         {
           img: img2,
-          title: 'Biochemistry',
+          title: 'BBA',
           desc: 'Seamlessly visualize quality intellectual capital without superior collaboration and idea tically',
         },
         {
             img: img3,
-            title: 'Biochemistry',
+            title: 'HND',
             desc: 'Seamlessly visualize quality intellectual capital without superior collaboration and idea tically',
         },
         {
             img: img4,
-            title: 'Biochemistry',
+            title: 'HNC',
             desc: 'Seamlessly visualize quality intellectual capital without superior collaboration and idea tically',
         },
         {
             img: img5,
-            title: 'Biochemistry',
+            title: 'Bsc Computer Science',
             desc: 'Seamlessly visualize quality intellectual capital without superior collaboration and idea tically',
         },
         {
             img: img6,
-            title: 'Biochemistry',
+            title: 'Bsc Software Enigneering',
             desc: 'Seamlessly visualize quality intellectual capital without superior collaboration and idea tically',
         },
         {
             img: img7,
-            title: 'Biochemistry',
+            title: 'Bsc International Relations',
             desc: 'Seamlessly visualize quality intellectual capital without superior collaboration and idea tically',
         },
         {
-            img: img8,
-            title: 'Biochemistry',
+            img: img3,
+            title: 'Bsc Pscychology',
             desc: 'Seamlessly visualize quality intellectual capital without superior collaboration and idea tically',
         },
         {
             img: img9,
-            title: 'Biochemistry',
+            title: 'Bsc Sociology',
             desc: 'Seamlessly visualize quality intellectual capital without superior collaboration and idea tically',
         },
         {
-            img: img10,
-            title: 'Biochemistry',
+            img: img3,
+            title: 'Btc Level 3',
             desc: 'Seamlessly visualize quality intellectual capital without superior collaboration and idea tically',
         },
         {
-            img: img11,
-            title: 'Biochemistry',
-            desc: 'Seamlessly visualize quality intellectual capital without superior collaboration and idea tically',
-        },
-        {
-            img: img12,
-            title: 'Biochemistry',
+            img: img3,
+            title: 'International Foundation Year',
             desc: 'Seamlessly visualize quality intellectual capital without superior collaboration and idea tically',
         },
       ]
@@ -150,11 +146,12 @@ function Courses() {
                 </div>
                 </div>
                 <Slider className="row class-active" {...settings}>
+                {degree.map((item, index) => (
                     <div className="col-lg-4 col-md-6 ">
                         <div className="courses-item mb-30 hover-zoomin">
                             <div className="thumb fix">
                                 <Link to="/single-courses">
-                                    <img src={degree[0].img} alt="contact-bg-an-01" />
+                                    <img src={degree[index].img} alt="contact-bg-an-01" />
                                 </Link>
                             </div>
                             <div className="courses-content">
@@ -162,154 +159,22 @@ function Courses() {
                                 <i className="fal fa-graduation-cap" /> Sciences
                                 </div>
                                 <h3>
-                                <Link to="/single-courses"> {degree[0].title}</Link>
+                                <Link to="/single-courses"> {degree[index].title}</Link>
                                 </h3>
                                 <p>
-                                 {degree[0].img}
+                                 {degree[index].desc}
                                 </p>
                                 <Link to="/single-courses" className="readmore">
                                 Read More <i className="fal fa-long-arrow-right" />
                                 </Link>
                             </div>
                             <div className="icon">
-                                <img src={img3} alt="img" />
+                                <img src={iconimg} alt="img" />
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 ">
-                        <div className="courses-item mb-30 hover-zoomin">
-                        <div className="thumb fix">
-                            <Link to="/single-courses">
-                                <img src={img4} alt="contact-bg-an-01" />
-                            </Link>
-                        </div>
-                        <div className="courses-content">
-                            <div className="cat">
-                            <i className="fal fa-graduation-cap" /> Economics
-                            </div>
-                            <h3>
-                            <Link to="/single-courses"> Major in Economics</Link>
-                            </h3>
-                            <p>
-                            Seamlessly visualize quality ellectual capital without superior
-                            collaboration and idea tically
-                            </p>
-                            <Link to="/single-courses" className="readmore">
-                            Read More <i className="fal fa-long-arrow-right" />
-                            </Link>
-                        </div>
-                        <div className="icon">
-                            <img src={img5} alt="img" />
-                        </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 ">
-                        <div className="courses-item mb-30 hover-zoomin">
-                        <div className="thumb fix">
-                            <Link to="/single-courses">
-                                <img src={img6} alt="contact-bg-an-01" />
-                            </Link>
-                        </div>
-                        <div className="courses-content">
-                            <div className="cat">
-                            <i className="fal fa-graduation-cap" /> Media
-                            </div>
-                            <h3>
-                            <Link to="/single-courses"> Business Media</Link>
-                            </h3>
-                            <p>
-                            Seamlessly visualize quality ellectual capital without superior
-                            collaboration and idea tically
-                            </p>
-                            <Link to="/single-courses" className="readmore">
-                            Read More <i className="fal fa-long-arrow-right" />
-                            </Link>
-                        </div>
-                        <div className="icon">
-                            <img src={img7} alt="img" />  
-                        </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 ">
-                        <div className="courses-item mb-30 hover-zoomin">
-                        <div className="thumb fix">
-                            <Link to="/single-courses">
-                                <img src={img8} alt="contact-bg-an-01" />
-                            </Link>
-                        </div>
-                        <div className="courses-content">
-                            <div className="cat">
-                                <i className="fal fa-graduation-cap" /> Public
-                            </div>
-                            <h3>
-                            <Link to="/single-courses"> Public Administration </Link>
-                            </h3>
-                            <p>
-                            Seamlessly visualize quality ellectual capital without superior
-                            collaboration and idea tically
-                            </p>
-                            <Link to="/single-courses" className="readmore">
-                            Read More <i className="fal fa-long-arrow-right" />
-                            </Link>
-                        </div>
-                        <div className="icon">
-                            <img src={img9} alt="img" />
-                        </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 ">
-                        <div className="courses-item mb-30 hover-zoomin">
-                        <div className="thumb fix">
-                            <Link to="/single-courses">
-                                <img src={img10} alt="contact-bg-an-01" />
-                            </Link>
-                        </div>
-                        <div className="courses-content">
-                            <div className="cat">
-                            <i className="fal fa-graduation-cap" /> Sciences
-                            </div>
-                            <h3>
-                            <Link to="/single-courses"> Biotechnology</Link>
-                            </h3>
-                            <p>
-                            Seamlessly visualize quality ellectual capital without superior
-                            collaboration and idea tically
-                            </p>
-                            <Link to="/single-courses" className="readmore">
-                            Read More <i className="fal fa-long-arrow-right" />
-                            </Link>
-                        </div>
-                        <div className="icon">
-                            <img src={img11} alt="img" />
-                        </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 ">
-                        <div className="courses-item mb-30 hover-zoomin">
-                        <div className="thumb fix">
-                            <Link to="/single-courses">
-                                <img src={img12} alt="contact-bg-an-01" />
-                            </Link>
-                        </div>
-                        <div className="courses-content">
-                            <div className="cat">
-                            <i className="fal fa-graduation-cap" /> Finance
-                            </div>
-                            <h3>
-                            <Link to="/single-courses"> Corporate Finance</Link>
-                            </h3>
-                            <p>
+                ))}
 
-                            </p>
-                            <Link to="/single-courses" className="readmore">
-                            Read More <i className="fal fa-long-arrow-right" />
-                            </Link>
-                        </div>
-                        <div className="icon">
-                            <img src={img13} alt="img" />
-                        </div>
-                        </div>
-                    </div>
                 </Slider>
             </div>
         </section>

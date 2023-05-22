@@ -4,15 +4,15 @@ import img1 from "../../assets/img/bg/an-img-03.png";
 import img2 from "../../assets/img/bg/an-img-04.png";
 import img3 from "../../assets/img/testimonial/invertedCommaIcon.png";
 //
-import img4 from "../../assets/img/testimonial/testi_avatar.png";
+import img4 from "../../assets/images/TestimonialImages/myImage.jpeg"  
 import img5 from "../../assets/img/testimonial/invertedCommaIcon.png";
-import img6 from "../../assets/img/testimonial/testi_avatar_02.png";
+import img6 from "../../assets/images/TestimonialImages/FaizanImage.jpeg"  
 import img7 from "../../assets/img/testimonial/invertedCommaIcon.png";
-import img8 from "../../assets/img/testimonial/testi_avatar_03.png";
+import img8 from "../../assets/images/TestimonialImages/tahaImage.jpeg"  
 import img9 from "../../assets/img/testimonial/invertedCommaIcon.png";
-import img10 from "../../assets/img/testimonial/testi_avatar.png";
+import img10 from "../../assets/images/TestimonialImages/FaizanImage.jpeg"  
 import img11 from "../../assets/img/testimonial/invertedCommaIcon.png";
-import img12 from "../../assets/img/testimonial/testi_avatar_02.png";
+import img12 from "../../assets/images/TestimonialImages/myImage.jpeg"  
 
 
 
@@ -83,13 +83,12 @@ function Testimonial() {
                             <div className="qt-img">
                                 <img src={img3} alt="img" />
                             </div>
-                            <p>
-                            Curabitur ac tortor ante. Sed quis iaculis risus. Ut ultrices
-                            ligula aliquet odio tristique euismod. Donec efficitur dolor in
-                            turpis aliquet, at mollis.
+                            <p> 
+                                "The university provided me with an exceptional education that shaped my future. 
+                                Grateful for the knowledge and experiences gained. Forever indebted to my alma mater."
                             </p>
                             <div className="testi-author">
-                                <img src={img4} alt="img" />
+                                <img src={img4} className='Testimonial-image'  alt="img" />
                             </div>
                             <div className="ta-info">
                             <h6>Rafay Shahood</h6>
@@ -101,12 +100,10 @@ function Testimonial() {
                                 <img src={img5} alt="img" />
                             </div>
                             <p>
-                            Curabitur ac tortor ante. Sed quis iaculis risus. Ut ultrices
-                            ligula aliquet odio tristique euismod. Donec efficitur dolor in
-                            turpis aliquet, at mollis.
+                            "As an alumni of this university, I can confidently say that it laid a strong foundation for my career. The supportive faculty, rigorous curriculum, and vibrant campus environment were instrumental in my success."
                             </p>
                             <div className="testi-author">
-                                <img src={img6} alt="img" />
+                                <img src={img6} className='Testimonial-image'  alt="img" />
                             </div>
                             <div className="ta-info">
                             <h6>Ahmad Usman</h6>
@@ -118,12 +115,10 @@ function Testimonial() {
                                 <img src={img7} alt="img" /> 
                             </div>
                             <p>
-                            Curabitur ac tortor ante. Sed quis iaculis risus. Ut ultrices
-                            ligula aliquet odio tristique euismod. Donec efficitur dolor in
-                            turpis aliquet, at mollis.
+                            "Being a part of this university was truly transformative. The diverse community, cutting-edge research opportunities, and valuable mentorship prepared me for the challenges of the real world. Proud to be a graduate of such an esteemed institution."
                             </p>
                             <div className="testi-author">
-                                <img src={img8} alt="img" />
+                                <img src={img8} className='Testimonial-image'  alt="img" />
                             </div>
                             <div className="ta-info">
                             <h6>Taha Pervaiz</h6>
@@ -135,12 +130,10 @@ function Testimonial() {
                                 <img src={img9} alt="img" />
                             </div>
                             <p>
-                            Curabitur ac tortor ante. Sed quis iaculis risus. Ut ultrices
-                            ligula aliquet odio tristique euismod. Donec efficitur dolor in
-                            turpis aliquet, at mollis.
+                            "As an alumni of this university, I can confidently say that it laid a strong foundation for my career. The supportive faculty, rigorous curriculum, and vibrant campus environment were instrumental in my success."
                             </p>
                             <div className="testi-author">
-                                <img src={img10} alt="img" />
+                                <img src={img10} className='Testimonial-image' alt="img" />
                             </div>
                             <div className="ta-info">
                             <h6>Ahmad Usman</h6>
@@ -152,12 +145,12 @@ function Testimonial() {
                                 <img src={img11} alt="img" />
                             </div>
                             <p>
-                            Curabitur ac tortor ante. Sed quis iaculis risus. Ut ultrices
-                            ligula aliquet odio tristique euismod. Donec efficitur dolor in
-                            turpis aliquet, at mollis.
+                            
+                                "The university provided me with an exceptional education that shaped my future. 
+                                Grateful for the knowledge and experiences gained. Forever indebted to my alma mater."
                             </p>
                             <div className="testi-author">
-                                <img src={img12} alt="img" />
+                                <img src={img12} className='Testimonial-image'  alt="img" />
                             </div>
                             <div className="ta-info">
                             <h6>Rafay Shahood</h6>

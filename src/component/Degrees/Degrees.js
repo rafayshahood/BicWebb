@@ -1,16 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import img1 from "../../assets/img/bg/couress-img-1.jpg"
+import img1 from "../../assets/images/CoursesImages/bba2.jpeg"
 import img2 from "../../assets/img/icon/cou-icon.png"
-import img3 from "../../assets/img/bg/couress-img-2.jpg"
-import img4 from "../../assets/img/icon/cou-icon.png"
-import img5 from "../../assets/img/bg/couress-img-3.jpg"
-import img6 from "../../assets/img/icon/cou-icon.png"
-import img7 from "../../assets/img/bg/couress-img-4.jpg"
-import img8 from "../../assets/img/bg/couress-img-5.jpg"
-import img9 from "../../assets/img/icon/cou-icon.png"
-import img10 from "../../assets/img/bg/couress-img-6.jpg"
+import img3 from "../../assets/images/CoursesImages/business2.jpg"
+import img4 from "../../assets/images/CoursesImages/sociology.jpg"
+import img5 from "../../assets/images/CoursesImages/hnc.jpg"
+import img6 from "../../assets/images/CoursesImages/computer-science.jpeg"
+import img7 from "../../assets/images/CoursesImages/software-engineering.jpeg"
+import img8 from "../../assets/images/CoursesImages/ir.jpeg"
+import img9 from "../../assets/images/CoursesImages/psychology.jpg"
+import img10 from "../../assets/images/CoursesImages/btec.png"
 import img11 from "../../assets/img/icon/cou-icon.png"
 
 
@@ -55,7 +55,7 @@ function Degrees() {
                     <div className="courses-item mb-30 hover-zoomin">
                     <div className="thumb fix">
                         <Link to="/single-courses">
-                            <img src={img1} alt="contact-bg-an-01" />
+                            <img src={img3} alt="contact-bg-an-01" />
                         </Link>
                     </div>
                     <div className="courses-content">
@@ -84,7 +84,7 @@ function Degrees() {
                     <div className="courses-item mb-30 hover-zoomin">
                     <div className="thumb fix">
                         <Link to="/single-courses">
-                            <img src={img1} alt="contact-bg-an-01" />
+                            <img src={img5} alt="contact-bg-an-01" />
                         </Link>
                     </div>
                     <div className="courses-content">
@@ -124,7 +124,7 @@ function Degrees() {
                     <div className="courses-item mb-30 hover-zoomin">
                     <div className="thumb fix">
                         <Link to="/single-courses">
-                            <img src={img1} alt="contact-bg-an-01" />
+                            <img src={img6} alt="contact-bg-an-01" />
                         </Link>
                     </div>
                     <div className="courses-content">
@@ -164,7 +164,7 @@ function Degrees() {
                     <div className="courses-item mb-30 hover-zoomin">
                     <div className="thumb fix">
                         <Link to="/single-courses">
-                            <img src={img1} alt="contact-bg-an-01" />
+                            <img src={img7} alt="contact-bg-an-01" />
                         </Link>
                     </div>
                     <div className="courses-content">
@@ -204,7 +204,7 @@ function Degrees() {
                     <div className="courses-item mb-30 hover-zoomin">
                     <div className="thumb fix">
                         <Link to="/single-courses">
-                            <img src={img1} alt="contact-bg-an-01" />
+                            <img src={img8} alt="contact-bg-an-01" />
                         </Link>
                     </div>
                     <div className="courses-content">
@@ -237,14 +237,14 @@ function Degrees() {
         <section data-animation="fadeInUp animated" data-delay=".2s" className='degrees-section'>
             <div className="container">
                 <div className="row">
-                    <h2 style={{marginBottom:'2%'}}>School of Pscychology</h2>
+                    <h2 style={{marginBottom:'2%'}}>School of Psychology</h2>
                 </div>
                 <div className="row align-items-center">
                 <div className="col-lg-4 col-md-6 ">
                     <div className="courses-item mb-30 hover-zoomin">
                     <div className="thumb fix">
                         <Link to="/single-courses">
-                            <img src={img1} alt="contact-bg-an-01" />
+                            <img src={img9} alt="contact-bg-an-01" />
                         </Link>
                     </div>
                     <div className="courses-content">
@@ -283,7 +283,7 @@ function Degrees() {
                     <div className="courses-item mb-30 hover-zoomin">
                     <div className="thumb fix">
                         <Link to="/single-courses">
-                            <img src={img1} alt="contact-bg-an-01" />
+                            <img src={img4} alt="contact-bg-an-01" />
                         </Link>
                     </div>
                     <div className="courses-content">
@@ -324,7 +324,7 @@ function Degrees() {
                     <div className="courses-item mb-30 hover-zoomin">
                     <div className="thumb fix">
                         <Link to="/single-courses">
-                            <img src={img1} alt="contact-bg-an-01" />
+                            <img src={img5} alt="contact-bg-an-01" />
                         </Link>
                     </div>
                     <div className="courses-content">
@@ -353,7 +353,7 @@ function Degrees() {
                     <div className="courses-item mb-30 hover-zoomin">
                     <div className="thumb fix">
                         <Link to="/single-courses">
-                            <img src={img1} alt="contact-bg-an-01" />
+                            <img src={img5} alt="contact-bg-an-01" />
                         </Link>
                     </div>
                     <div className="courses-content">
