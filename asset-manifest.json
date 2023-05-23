@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BicWebb/static/css/main.16ad9894.css",
-    "main.js": "/BicWebb/static/js/main.739f0778.js",
+    "main.css": "/BicWebb/static/css/main.24735a74.css",
+    "main.js": "/BicWebb/static/js/main.2483f690.js",
     "static/js/787.28cb0dcd.chunk.js": "/BicWebb/static/js/787.28cb0dcd.chunk.js",
     "static/media/Cinema.jpg": "/BicWebb/static/media/Cinema.39e467ee3e50bc793613.jpg",
     "static/media/MeetingRoom.jpg": "/BicWebb/static/media/MeetingRoom.f2487f7f11d7cc6d8eb2.jpg",
@@ -39,6 +39,8 @@
     "static/media/bdrc-bg.png": "/BicWebb/static/media/bdrc-bg.44e92926ca734bd5af6a.png",
     "static/media/FaizanImage.jpeg": "/BicWebb/static/media/FaizanImage.16611fab79691745142d.jpeg",
     "static/media/fa-regular-400.woff": "/BicWebb/static/media/fa-regular-400.06bf81a201178decf29a.woff",
+    "static/media/epcad1.jpeg": "/BicWebb/static/media/epcad1.b546625a53e79854817c.jpeg",
+    "static/media/epcad2.jpeg": "/BicWebb/static/media/epcad2.b3e96cf0e163e81ceb26.jpeg",
     "static/media/SirFawad.jpeg": "/BicWebb/static/media/SirFawad.d71ae1d6df4a2c0984a5.jpeg",
     "static/media/fa-light-300.woff2": "/BicWebb/static/media/fa-light-300.9edbabc6bdccca123a05.woff2",
     "static/media/fa-solid-900.woff": "/BicWebb/static/media/fa-solid-900.0cc237d5f02e14d3a916.woff",
@@ -70,12 +72,12 @@
     "static/media/couress-img-5.jpg": "/BicWebb/static/media/couress-img-5.0e50f2e795dde1a41f26.jpg",
     "static/media/couress-img-6.jpg": "/BicWebb/static/media/couress-img-6.f37c368b6d900b3dae13.jpg",
     "index.html": "/BicWebb/index.html",
-    "main.16ad9894.css.map": "/BicWebb/static/css/main.16ad9894.css.map",
-    "main.739f0778.js.map": "/BicWebb/static/js/main.739f0778.js.map",
+    "main.24735a74.css.map": "/BicWebb/static/css/main.24735a74.css.map",
+    "main.2483f690.js.map": "/BicWebb/static/js/main.2483f690.js.map",
     "787.28cb0dcd.chunk.js.map": "/BicWebb/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16ad9894.css",
-    "static/js/main.739f0778.js"
+    "static/css/main.24735a74.css",
+    "static/js/main.2483f690.js"
   ]
 }
