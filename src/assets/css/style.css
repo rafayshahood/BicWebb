@@ -45,6 +45,9 @@
     margin: 50px;
   }
   
+  .message-image-text-component.reversed {
+    flex-direction: row-reverse;
+  }
   .message-image-container {
     flex: 0 0 40%;
     max-width: 40%;

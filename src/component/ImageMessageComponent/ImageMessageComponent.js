@@ -4,10 +4,11 @@ import Header from '../header/Main';
 import { Link } from 'react-router-dom';
 
 
-const ImageTextComponent = ({ imageUrl, heading, description }) => {
+const ImageTextComponent = ({ imageUrl, heading, description, changedirection }) => {
+    const isContentReversed = changedirection === 'true';
  return (
     <>
-      <div className="message-image-text-component">
+      <div className={`message-image-text-component ${isContentReversed ? 'reversed' : ''}`}>
         <div className="message-image-container">
           <img src={imageUrl} alt="Component Image" />
         </div>
