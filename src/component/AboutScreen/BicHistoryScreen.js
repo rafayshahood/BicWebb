@@ -1,6 +1,9 @@
 import React from 'react'
 import Bredcom from '../Bredcom/Bredcom'
 import Header from '../header/Main'
+import About from '../homeScreenComponents/About'
+import Campus from '../CampusTour/CampusTour'
+import Testimonial from '../homeScreenComponents/Testimonial'
 
 
 
@@ -31,6 +34,9 @@ function BicHistoryScreen() {
          a holistic review of each applicant's qualifications, including academic achievements, test scores, personal statement, and other factors that may be relevant to the program of study.
         </p>
         </div>
+        <About/>
+        <Campus/>
+        <Testimonial/>
     </>
   )
 }

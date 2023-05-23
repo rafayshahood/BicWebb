@@ -2,37 +2,23 @@ import React from 'react'
 import Bredcom from '../Bredcom/Bredcom'
 import Header from '../header/Main'
 
+import CGMU from "../../assets/images/AboutImages/CGMU.jpeg";
+import ImageTextComponent from '../ImageMessageComponent/ImageMessageComponent';
 
 
 
 function CgmuMessageScreen() {
   return (
     <>
-        <Header/>
-        <Bredcom
-        title="Home" 
-        subtitle="CGMU"/>
-        <div className='page-data'>
-        <h2 className='section-heading'>CGMU's Message</h2>
-        <p className='section-text'>
-        To be eligible for admission to our university, applicants must meet the following criteria:
-        Education qualifications: Applicants must have completed their secondary education or equivalent from a recognized board or 
-        university.
-        Minimum grades: Applicants must have achieved a minimum grade point average (GPA) or percentage in their qualifying exams. 
-        The specific minimum grade or percentage required may vary depending on the program of study.
-        English language proficiency: International students whose native language is not English must demonstrate proficiency
-         in the English language by submitting standardized test scores such as TOEFL, IELTS, or other recognized English language proficiency
-        tests.
-        Entrance exam: Some programs may require applicants to take an entrance exam, such as the SAT, ACT, GRE, or GMAT, and achieve a 
-        minimum score to be considered for admission.
-        Personal statement: Applicants may be required to submit a personal statement or essay detailing their motivation for applying to 
-        the university and explaining why they are a good fit for the program.
-        Please note that meeting the eligibility criteria does not guarantee admission to the university. Admissions decisions are based on
-         a holistic review of each applicant's qualifications, including academic achievements, test scores, personal statement, and other factors that may be relevant to the program of study.
-        </p>
-        </div>
+      <Header />
+      <Bredcom title="Home" subtitle="CEO" />
+      <ImageTextComponent
+        imageUrl={CGMU}
+        heading="CGMU - Mam Saffiya"
+        description="It is my honour and privilege to be associated with Beaconhouse International College (BIC). For many decades now, Beaconhouse has been at the forefront of K-12 teaching and learning. We are tremendously proud of the contributions our students have made to Pakistan and the wider world. BIC continues this commitment to exceptional quality education and extends it to higher education. We have combined our extensive national experience with some of the West’s leading institutions to bring unique transnational education programs to Pakistani students. This synthesis of experience should provide students with the springboard they need to be valuable contributors to the global economy in the 21st century. BIC has accelerated rapidly in both its program offerings and locations in the last two years. Along with offering BTEC level 3-5 qualifications from Pearson, the institution now offers a variety of exceptional undergraduate and postgraduate programs in association with our international partners. Along with a range of humanities and business programs, we are proud to be the first institution in Pakistan to provide international mechanical, electrical, and civil engineering programs approved by the Higher Education Commission. What’s more, all programs are designed to help students develop real-life skills as a core part of their educational journey. In order to do this, the institution has an in-house integrated incubation program focusing on core skills like design thinking, business development, and fundraising. It is our hope that this combination of practical training and exceptional theory will allow BIC students to stand out amongst their peers and carve out exceptional careers for themselves. I am glad you have ventured to our website, and hope that you will find our new vision for higher education interesting and compelling."
+      />
     </>
-  )
+  );
 }
 
 export default CgmuMessageScreen
